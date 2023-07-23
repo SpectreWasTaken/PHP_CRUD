@@ -1,6 +1,8 @@
 <?php
+//Needed for database connectivity
 require 'connection.php';
 
+//Checking for the Delete button on index.php
 if(isset($_POST['delete'])){
 
     $student_id = mysqli_real_escape_string($conn, $_POST['delete']);
@@ -17,7 +19,7 @@ if(isset($_POST['delete'])){
 }
 
 
-
+//checking on the update button in the student-edit.php
 if(isset($_POST['update'])){
     $id = mysqli_real_escape_string($conn, $_POST['id']);
     $name = mysqli_real_escape_string($conn, $_POST['name']);
@@ -35,6 +37,8 @@ if(isset($_POST['update'])){
         exit(0);
     }
 }
+
+//Checking on the save button on student-create.php
 if(isset($_POST['save'])){
     $id = mysqli_real_escape_string($conn, $_POST['id']);
     $name = mysqli_real_escape_string($conn, $_POST['name']);

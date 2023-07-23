@@ -26,7 +26,7 @@
 
                             <div class="mb-3">
                             <label> Student ID</label>
-                            <input type="text" name="id" class="form-control">
+                            <input type="text" name="id" class="form-control" value="Auto-Generated" readonly>
                             </div>
                             <div class="mb-3">
                             <label> Student Name</label>

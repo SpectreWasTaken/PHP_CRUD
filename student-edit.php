@@ -24,6 +24,7 @@ require 'connection.php'
                     </div>
                     <div class="card-body">
                         <?php
+                        //Getting the Already inserted information to view on the page and edit
                             if(isset($_GET['id'])){
                               $student_id = $_GET['id'];
                               $query ="SELECT * FROM result WHERE id='$student_id'";

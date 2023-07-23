@@ -40,6 +40,7 @@ require 'connection.php'
                                 $query_run = mysqli_query($conn, $query);
 
                                 if(mysqli_num_rows($query_run) > 0){
+                                    //Looping through all the students in the database to write their information
                                     foreach($query_run as $student){
                                 ?>
                                 <tr>

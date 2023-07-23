@@ -21,3 +21,8 @@ Three Almost Identical pages with some edits, to allow the insertion, editing an
 # Styling
 
 No custom CSS was written for this webapp, as bootstrap 5 was mostly used.
+
+# Problems Faced
+
+During Development, PHP was not set up correctly out-of-the-box, where a new php.ini file needed to be inserted
+
